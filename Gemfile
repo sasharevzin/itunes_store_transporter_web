@@ -28,7 +28,7 @@ group :test do
   gem "rack-test", "0.6.3", :require => "rack/test"
   gem "database_cleaner"
   gem "capybara-screenshot"
-  gem "poltergeist"
+  gem "poltergeist", ">= 1.9.0"
   # No Windows support, see: https://github.com/colszowka/phantomjs-gem/pull/77
   gem "phantomjs", :require => "phantomjs/poltergeist", :install_if => !Gem.win_platform?
 end
